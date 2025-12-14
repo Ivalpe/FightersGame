@@ -9,7 +9,7 @@ public class PlayerInput : MonoBehaviour
     private MovementController _moveController;
 
     private float _upDown;
-    private float _speed;
+    public float _speed;
 
     private void Awake()
     {

@@ -44,7 +44,6 @@ public class MovementController : MonoBehaviour
     public void TryMove(float speed)
     {
         
-
         if (CanMove(speed))
         {       
             _animator.SetFloat(SPEED, _id == 1 ? -speed : speed);

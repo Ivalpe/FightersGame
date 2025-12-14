@@ -9,7 +9,7 @@
                     "name": "Teleport",
                     "type": "Button",
                     "id": "da5efce7-0b41-45bb-9a3c-2c57823845bf",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -27,7 +27,7 @@
                     "name": "QuickAttack",
                     "type": "Button",
                     "id": "0efb88e0-c59e-47a9-9c94-bd59841a2764",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -122,7 +122,7 @@
                     "path": "<Gamepad>/leftStick/x",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Gamepad",
+                    "groups": "Gamepad;Touch;XR;Joystick",
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": false
