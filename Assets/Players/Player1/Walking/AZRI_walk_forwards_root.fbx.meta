@@ -15,7 +15,7 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     removeConstantScaleCurves: 0
-    motionNodeName: 
+    motionNodeName: joints/BND_C_World1
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
