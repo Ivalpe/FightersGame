@@ -12,9 +12,8 @@ GameObject:
   - component: {fileID: 3003526369627904349}
   - component: {fileID: 2984607633797078388}
   - component: {fileID: 3768168009139191508}
-  - component: {fileID: 554231126698993723}
   - component: {fileID: -7197527856493598119}
-  - component: {fileID: -7444391702565907456}
+  - component: {fileID: -4683793699207146555}
   m_Layer: 0
   m_Name: Ivalpe_Fighter
   m_TagString: Untagged
@@ -176,19 +175,6 @@ MonoBehaviour:
   StartRotations:
   - {x: 0, y: 90, z: 0}
   - {x: 0, y: -90, z: 0}
---- !u!114 &554231126698993723
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6651271892507778850}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1dcd2bdc0ab61ff488504182c86673a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ImpactPrefab: {fileID: 100004, guid: a89abc0d2591545288f4c041059ae633, type: 3}
 --- !u!114 &-7197527856493598119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -203,7 +189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveLimits: {x: -5, y: 5}
   SafetyDistance: 1
---- !u!114 &-7444391702565907456
+--- !u!114 &-4683793699207146555
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -212,10 +198,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6651271892507778850}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed17639b42514324ebf77aa8b3f7428a, type: 3}
+  m_Script: {fileID: 11500000, guid: 1dcd2bdc0ab61ff488504182c86673a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 0
+  ImpactPrefab: {fileID: 100004, guid: a89abc0d2591545288f4c041059ae633, type: 3}
 --- !u!1 &9009186646298606696
 GameObject:
   m_ObjectHideFlags: 0

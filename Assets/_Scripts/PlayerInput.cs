@@ -11,14 +11,15 @@ public class PlayerInput : MonoBehaviour
     private float _upDown;
     public float _speed;
 
-    private void Awake()
+    public void Initialize(PlayerController pc, MovementController mc)
     {
-        _controller = GetComponent<PlayerController>();
-        _moveController = GetComponent<MovementController>();
+        _controller = pc;
+        _moveController = mc;
     }
 
     private void Update()
     {
+
         _moveController.TryMove(_speed);
     }
     // Start is called before the first frame update

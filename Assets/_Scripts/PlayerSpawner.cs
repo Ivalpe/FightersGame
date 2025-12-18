@@ -1,10 +1,7 @@
 using UnityEngine;
 
-using UnityEngine;
-
 public class PlayerSpawner : MonoBehaviour
 {
-    // En el inspector verás una flechita. Pon Size = 3 y arrastra tus prefabs ahí.
     public GameObject[] characters;
 
     void Start()
@@ -13,7 +10,17 @@ public class PlayerSpawner : MonoBehaviour
         {
             int randomIndex = Random.Range(0, characters.Length);
 
-            Instantiate(characters[randomIndex], transform);
+            GameObject characterInstance = Instantiate(characters[randomIndex], transform);
+
+            var movement = characterInstance.GetComponent<MovementController>();
+            var controller = characterInstance.GetComponent<PlayerController>();
+
+            var input = GetComponent<PlayerInput>();
+
+            if (input != null && movement != null && controller != null)
+            {
+                input.Initialize(controller, movement);
+            }
         }
     }
 }
