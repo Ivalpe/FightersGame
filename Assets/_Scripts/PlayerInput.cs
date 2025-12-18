@@ -19,6 +19,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
+        if (_moveController == null) return;
 
         _moveController.TryMove(_speed);
     }

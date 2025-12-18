@@ -10,16 +10,18 @@ public class PlayerSpawner : MonoBehaviour
         {
             int randomIndex = Random.Range(0, characters.Length);
 
-            GameObject characterInstance = Instantiate(characters[randomIndex], transform);
+            // 1. Instanciar
+            GameObject newCharacter = Instantiate(characters[randomIndex], transform);
 
-            var movement = characterInstance.GetComponent<MovementController>();
-            var controller = characterInstance.GetComponent<PlayerController>();
+            // 2. Obtener referencias
+            var pc = newCharacter.GetComponent<PlayerController>();
+            var mc = newCharacter.GetComponent<MovementController>();
+            var inputScript = GetComponent<PlayerInput>();
 
-            var input = GetComponent<PlayerInput>();
-
-            if (input != null && movement != null && controller != null)
+            // 3. CONECTAR (Esta es la parte clave que te debe faltar)
+            if (inputScript != null && pc != null && mc != null)
             {
-                input.Initialize(controller, movement);
+                inputScript.Initialize(pc, mc);
             }
         }
     }
